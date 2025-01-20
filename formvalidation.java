@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 public class formvalidation {
 	public static boolean validateName(String name) {
-		String nameregex="^(?=.*[a-zA-Z])(?=.*[0-9])[a-zA-Z0-9]+$";
+		String nameregex="^[a-zA-Z0-9]+$";
 		return Pattern.matches(nameregex, name);
 	}
 	public static boolean validateEmail(String email) {
